@@ -208,6 +208,12 @@ class ThreeExperience {
       }
     }
 
+    for (let child of this.model.children) {
+      if (child instanceof THREE.Group) {
+        child.rotation.y += 0.004
+      }
+    }
+
     this.controls.update()
     this.renderer.render(this.scene, this.camera)
   }
