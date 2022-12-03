@@ -17,7 +17,7 @@ class ARGalaxyExperience {
       100
     )
     this.scene = new THREE.Scene()
-    this.scene.background = new THREE.Color(0x000000)
+    this.scene.background = new THREE.Color(0x1e1e1e)
 
     this.camera.position.set(10, 10, 10)
     this.scene.add(this.camera)

@@ -13,68 +13,57 @@ export default function Home() {
   const [cards, setCards] = useState<Array<CardType>>([
     {
       title: 'Sol',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/sun.svg',
       link: '/visualizador/sol',
     },
     {
       title: 'Mercurio',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/mercury.svg',
       link: '/visualizador/mercurio',
     },
     {
       title: 'Venus',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/venus.svg',
       link: '/visualizador/venus',
     },
     {
       title: 'Tierra',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/earth.svg',
       link: '/visualizador/tierra',
     },
     {
       title: 'Marte',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/mars.svg',
       link: '/visualizador/marte',
     },
     {
       title: 'Jupiter',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/jupiter.svg',
       link: '/visualizador/jupiter',
     },
     {
       title: 'Saturno',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/saturn.svg',
       link: '/visualizador/saturno',
     },
     {
       title: 'Urano',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/uranus.svg',
       link: '/visualizador/urano',
     },
     {
       title: 'Neptuno',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/neptune.svg',
       link: '/visualizador/neptuno',
     },
     {
       title: 'Galaxia',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/galaxy.png',
       link: '/visualizador/galaxia',
     },
     {
       title: 'Sistema_Solar',
-      image:
-        'https://images.unsplash.com/photo-1545156521-77bd85671d30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
+      image: './images/solar_system.svg',
       link: '/visualizador/sistema_solar',
     },
   ])
