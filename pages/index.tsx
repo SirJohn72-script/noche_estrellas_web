@@ -58,7 +58,7 @@ export default function Home() {
     },
     {
       title: 'Galaxia',
-      image: './images/galaxy.png',
+      image: './images/galaxys.png',
       link: '/visualizador/galaxia',
     },
     {
