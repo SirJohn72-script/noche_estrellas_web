@@ -17,7 +17,7 @@ class ThreeExperience {
   reticle: THREE.Mesh
   controller: null | THREE.XRTargetRaySpace = null
   hitTestSourceRequested: boolean = false
-  hitTestSource: null | XRHitTestSource = null
+  hitTestSource: null | XRHitTestSource | undefined = null
   referenceSpace: any = null
   model: THREE.Group = new THREE.Group()
 
@@ -103,18 +103,20 @@ class ThreeExperience {
   //Origin
   requestHitTestSource() {
     const session = this.renderer.xr.getSession()
+   
 
     if (session) {
       session.requestReferenceSpace('viewer').then((referenceSpace) => {
-        if (session && referenceSpace) {
-          session
-            .requestHitTestSource({ space: referenceSpace })
-            .then((source) => {
-              this.hitTestSource = source
-            })
+        if(session.requestHitTestSource!)
+        {
+          session.requestHitTestSource({ space: referenceSpace })!.then((source: XRHitTestSource | undefined) => {
+            this.hitTestSource = source
+          }).catch(err => console.log(err))
         }
       })
 
+
+        
       session.addEventListener('end', () => {
         this.hitTestSourceRequested = false
         this.hitTestSource = null
