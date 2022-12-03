@@ -1,5 +1,5 @@
 .card_container {
-  height: 100vh;
+  height: fit-content;
   background-color: #393939;
 }
 

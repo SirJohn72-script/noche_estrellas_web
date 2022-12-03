@@ -6,6 +6,7 @@
 @import './galaxy.css';
 @import './card.css';
 @import './footer.css';
+@import './instrucciones.css';
 
 * {
   margin: 0;
